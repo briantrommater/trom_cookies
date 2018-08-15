@@ -5,7 +5,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title></title>
-    
+    <!-- bryans two additions below -->
+    <meta http-equiv="cache-control" content="no-cache" />
+    <!-- <meta http-equiv="Cache-Control" content="no-store" /> -->
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- <link rel="stylesheet" type="text/css" href="reset.css"> -->
@@ -22,11 +24,15 @@
     
     <button onclick='count1()'><img class='cookie' src='images/lemoncookie.jpg'></button>
     <button onclick='count2()'><img class='cookie' src='images/chocolatecookie.jpg'></button>
-    <button onclick='count3()'><img class='cookie' src='images/sugarcookie.jpg'></button>
+    <button onclick='count3()'><img class='cookie' src='images/sugarcookie.jpg'></button><br><br>
 
     <h2 id='lemcount'>You have not selected any lemon cookies</h2>
     <h2 id='choccount'>You have not selected any chocolate cookies</h2>
-    <h2 id='sugcount'>You have not selected any sugar cookies</h2>
+    <h2 id='sugcount'>You have not selected any sugar cookies</h2><br><br>
+
+    <div>Feeling sick?  Click to reset cookies</div>
+    <button onclick='reset()'><img class='puke' src='images/sick.jpeg'></button>
+
     
 
 <script src="main.js"></script>
