@@ -1,0 +1,26 @@
+.cookie {
+    height: 250px;
+    width: 250px;
+}
+
+#header {
+    font-size: 40px;
+}
+
+@media only screen and (max-width: 850px) {
+
+    img {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+@media only screen and (min-width: 851px) and (max-width: 1250px) {
+    
+    img {
+        width: 275px;
+        height: 275px;
+    }
+}
+
+
