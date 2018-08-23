@@ -56,14 +56,24 @@ function count3() {
 
 //will reset users visible cookie count onclick 
 //& will reset internet cookie count to zero when refresh
+// onPageLoad();
 
 function reset() {
-    document.querySelector('#lemcount').innerHTML = "You have not selected any lemon cookies";
-    document.querySelector('#choccount').innerHTML = "You have not selected any chocolate cookies";
-    document.querySelector('#sugcount').innerHTML = "You have not selected any sugar cookies";
     Cookies.set('lemon', 0);
     Cookies.set('choco', 0);
     Cookies.set('sugar', 0);
+    document.querySelector('#lemcount').innerHTML = "You have not selected any lemon cookies";
+    document.querySelector('#choccount').innerHTML = "You have not selected any chocolate cookies";
+    document.querySelector('#sugcount').innerHTML = "You have not selected any sugar cookies";
+    location.reload(true)
 }
 
+
+// document.getElementById("box2").onclick = function(){
+//     Cookies.set("sugar", 0) + Cookies.set("chocolate", 0) + Cookies.set("lemon", 0);
+//     alert("You have zero cookies! Have a nice day!");
+
+// setTimeout(function() {
+//     location.reload()
+// }, 2400)
 
